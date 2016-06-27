@@ -18,9 +18,10 @@ from bpy_extras.io_utils import ImportHelper
 
 import os
 script_path = os.path.abspath(__file__)
+module_path = os.path.dirname(script_path)
 
 import sys
-sys.path.append("/Users/dspeckhard/Source/blender-geo/")
+sys.path.append(module_path)
 
 from transverse_mercator import TransverseMercator
 from osm_parser import OsmParser
